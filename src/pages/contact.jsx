@@ -171,9 +171,9 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* 3 Info Cards */}
-        <div className="container lg:mt-24 mt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+        {/* Contact Info Cards */}
+        <div className="container lg:mt-24 mt-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
             {/* Phone */}
             <div className="text-center px-6">
               <a href={phoneValue ? `tel:${phoneValue}` : "#"} className="block hover:opacity-80 transition-opacity">
@@ -204,26 +204,6 @@ export default function Contact() {
                   <div className="mt-5">
                     <span className="btn btn-link text-emerald-600">
                       {emailValue}
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            {/* Location */}
-            <div className="text-center px-6">
-              <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
-                <div className="size-14 bg-emerald-600/5 text-emerald-600 rounded-xl flex items-center justify-center mx-auto">
-                  <PiMapPin />
-                </div>
-                <div className="content mt-7">
-                  <h5 className="text-lg font-semibold">{t("contact.location")}</h5>
-                  <p className="text-slate-400 mt-3">
-                    {addressValue || t("contact.locationAddress")}
-                  </p>
-                  <div className="mt-5">
-                    <span className="btn btn-link text-emerald-600">
-                      {t("contact.viewOnMap")}
                     </span>
                   </div>
                 </div>

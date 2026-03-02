@@ -501,6 +501,38 @@
   "pricing": {
     "title": "Qiymət Planları",
     "monthly": "/ay",
-    "createAd": "Planı Almaq"
+    "createAd": "Planı Almaq",
+    "packages": [
+      {
+        "title": "TƏK VAKANSİYA ELANI",
+        "features": [
+          "1 vakansiya",
+          "Birdəfəlik recruiterlər üçün ideal"
+        ]
+      },
+      {
+        "title": "6-AYLIQ ABUNƏLİK",
+        "features": [
+          "Limitsiz vakansiya",
+          "Prioritet: Yuxarıda görün"
+        ]
+      },
+      {
+        "title": "BAŞLANĞIC PAKET (5 VAKANSİYA)",
+        "features": [
+          "5 vakansiya",
+          "20% qənaət",
+          "1 elan = 40 ₼"
+        ]
+      },
+      {
+        "title": "12-AYLIQ LİMİTSİZ ABUNƏLİK",
+        "features": [
+          "Limitsiz vakansiya",
+          "Prioritet",
+          "Bonus: 1 pulsuz namizəd"
+        ]
+      }
+    ]
   }
 }

@@ -53,7 +53,19 @@ export default function JobGridsTwo() {
   ======================= */
   useEffect(() => {
     IndustryAPI.getIndustries(1, 10000, { relationsOccupations: true }).then(
-      (res) => setIndustries(res.data.data)
+      (res) => {
+        const sortedIndustries = res.data.data.map(ind => {
+          if (ind.occupations) {
+            return {
+              ...ind,
+              occupations: [...ind.occupations].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
+            };
+          }
+          return ind;
+        }).sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
+        setIndustries(sortedIndustries);
+      }
     );
 
     EmploymentTypeApi.getEmploymentTypes(1, 10000).then((res) =>

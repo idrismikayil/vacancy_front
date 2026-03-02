@@ -502,6 +502,38 @@
   "pricing": {
     "title": "Pricing Plans",
     "monthly": "/mo",
-    "createAd": "Buy Plan"
+    "createAd": "Buy Plan",
+    "packages": [
+      {
+        "title": "SINGLE VACANCY AD",
+        "features": [
+          "1 vacancy posting",
+          "Ideal for occasional recruiters"
+        ]
+      },
+      {
+        "title": "6-MONTH SUBSCRIPTION",
+        "features": [
+          "Unlimited vacancy postings",
+          "Priority Listing: Ads appear higher"
+        ]
+      },
+      {
+        "title": "STARTER PACKAGE (5 VACANCIES)",
+        "features": [
+          "5 vacancy postings",
+          "Save 20%",
+          "1 ad = 40 ₼"
+        ]
+      },
+      {
+        "title": "12-MONTH UNLIMITED SUBSCRIPTION",
+        "features": [
+          "Unlimited vacancy postings",
+          "Priority Listing",
+          "Bonus: 1 free candidate placement"
+        ]
+      }
+    ]
   }
 }
