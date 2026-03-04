@@ -130,11 +130,6 @@ export default function Pricing() {
                       </span>
 
 
-                      {(index === 1 || index === 3) && (
-                        <span className="text-xl font-semibold self-end mb-1">
-                          {t('pricing.monthly')}
-                        </span>
-                      )}
                     </div>
 
                     <ul className="list-none text-slate-400 border-t border-gray-100 dark:border-gray-700 pt-5">

@@ -154,10 +154,10 @@ const Navbar = (props) => {
         Element.prototype.webkitMatchesSelector ||
         function (s) {
           var matches = (this.document || this.ownerDocument).querySelectorAll(
-              s
-            ),
+            s
+          ),
             i = matches.length;
-          while (--i >= 0 && matches.item(i) !== this) {}
+          while (--i >= 0 && matches.item(i) !== this) { }
           return i > -1;
         };
     }
@@ -204,18 +204,18 @@ const Navbar = (props) => {
   const userMenuItems = [
     ...(user?.data?.user?.role === "company"
       ? [
-          {
-            key: "company-profile",
-            label: (
-              <Link to="/company-profile" className="flex items-center gap-2">
-                <FiUser />
-                {t("navbar.profile")}
-              </Link>
-            ),
-          },
-        ]
+        {
+          key: "company-profile",
+          label: (
+            <Link to="/company-profile" className="flex items-center gap-2">
+              <FiUser />
+              {t("navbar.profile")}
+            </Link>
+          ),
+        },
+      ]
       : user?.data?.user?.role === "candidate"
-      ? [
+        ? [
           {
             key: "profile",
             label: (
@@ -226,24 +226,24 @@ const Navbar = (props) => {
             ),
           },
         ]
-      : []),
+        : []),
 
     ...(user?.data?.user?.role !== "company" &&
-    localStorage.getItem("email_verified_at") !== "false"
+      localStorage.getItem("email_verified_at") !== "false"
       ? [
-          {
-            key: "settings",
-            label: (
-              <Link
-                to="/candidate-profile-setting"
-                className="flex items-center gap-2"
-              >
-                <FiSettings />
-                {t("navbar.settings")}
-              </Link>
-            ),
-          },
-        ]
+        {
+          key: "settings",
+          label: (
+            <Link
+              to="/candidate-profile-setting"
+              className="flex items-center gap-2"
+            >
+              <FiSettings />
+              {t("navbar.settings")}
+            </Link>
+          ),
+        },
+      ]
       : []),
 
     {
@@ -284,11 +284,10 @@ const Navbar = (props) => {
   return (
     <nav id="topnav" className={`defaultscroll is-sticky ${topnavClass}`}>
       <div
-        className={`${
-          isContainerFluid === true
+        className={`${isContainerFluid === true
             ? "container-fluid md:px-8 px-3"
             : "container"
-        }`}
+          }`}
       >
         <Link className="logo" to="/">
           <div className="block sm:hidden">
@@ -391,7 +390,6 @@ const Navbar = (props) => {
                     textDecoration: "none",
                   }}
                 >
-                  <FaDollarSign />
                   {t("common.plans")}
                 </Link>
               </div>
@@ -542,7 +540,6 @@ const Navbar = (props) => {
                       textDecoration: "none",
                     }}
                   >
-                    <FaDollarSign />
                     {t("common.plans")}
                   </Link>
                 )}
